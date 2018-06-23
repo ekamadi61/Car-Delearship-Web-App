@@ -1,0 +1,142 @@
+/* CSS Document */
+
+
+/*Text Elements */
+
+p      {color:#000000; font-size:12px; line-height:150%;
+		margin:15px 0;	}
+p .left { margin: 1.5em 1.5em 1.5em 0; padding:0;	}
+p .right{ margin: 1.5em 0 1.5em 1.5em 0; padding:0;	}
+
+a           {	}
+a:link      {color:#00f; }
+a:visited   {color:#0f0; }
+a:active    {color:#000; }
+a:focus     {color:#666; }
+a:hover     {color:#f00; }
+
+/* Images */
+.image-frame {padding:10px; border:1px #ccc solid; margin:10px;	}
+
+
+
+
+
+/* Global */
+html {	}
+body { 
+	background-image:url(../photos/New%20folder/broken-car-vehicle-vintage.jpg);
+	background-color:#E3BEBF; 
+	background-repeat:no-repeat; 
+	background-size:cover;
+	background-attachment:scroll;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {font-weight:bold;  }
+
+h1 {font-size:28px; }
+h2 {font-size:20px; color:#D56F09;
+padding-bottom:15px; border-bottom:1px #ccc solid; margin-bottom:15px;}
+h3 {font-size:18px; color:#000000; margin-bottom:2px;}
+h4 {font-size:14px; color:#000000;}
+h5 {font-size:14px;}
+h6 {font-size:14px;}
+
+
+/* containers */
+#outer   { width:1060px;margin:0 auto; background-color:#F4EAEA	}
+#wrapper { width:1000px;margin:0 auto; background-color:#F4EAEA	}
+
+#heading  {font-weight:bold;	}
+#Logo { margin:30px 0px; float:left;}
+
+#social-media-icons {float:right;  }
+#social-media-icons ul li {display:inline;}
+#social-media-icons ul { margin-top:180px;}
+
+#social-media-icons-2 {float:right;  }
+#social-media-icons-2 ul li {display:inline;}
+#social-media-icons-2 ul { margin-top:30px;}
+
+
+
+#topnav  		 {clear:both; }
+#topnav ul 	 {border-top:1px #000000 solid; border-bottom:1px #000000 solid;
+				 padding:10px 0;}
+#topnav ul li 	 {display:inline;}
+#topnav ul li a {padding:0 15px;	}
+
+
+#topnav a:link      {color:#000; font-weight:bold; }
+#topnav a:visited   {color:#000; }
+#topnav a:active    {color:#000; }
+#topnav a:focus     {color:#666; }
+#topnav a:hover     {color:#EB8016 }
+
+#banner { }
+#slider{
+	width:990px;
+	height:350px;
+	overflow:hidden;
+	margin:30px auto;
+	
+}
+.slider img{
+	width:990px;
+	height:350px;
+	display:none;
+}
+
+
+#content {width:600px; float:left; }
+#content-fullwidth {width:100%;	}
+
+#right-side {width:300px; float:right;}
+
+
+#footer {clear:both; margin-top:20px 0; border-top:1px #000000 solid;
+		text-align:center; }
+		
+/* Forms */
+form ol {list-style-type:none; }
+form 	{text-align:left; margin:20px; }
+form ol li input, select { margin-top:10px;}
+label {
+	 float:left; width:150px; margin-top:7px;
+	 text-align:right; display:block; background:none; font-weight:bold; 
+	 }
+
+.submit{background:#F7EFEF;  padding:3px; border-radius:5px;}
+
+input {
+	width:280px; margin:0 0 16px 10px:
+	border:1px #bbb solid; padding:5px; background:none;
+		}
+input:focus, textarea:focus {background color:#ffd5aa; }
+
+textarea {
+		 width:280px; height:150px; margin:0 0 16px 10px;
+		border:1px #bbb solid; padding:5px; background:none;
+         }
+		 
+select {margin-bottom:20px; }
+		
+.month {margin-left:155px; }
+
+.submit {
+		width:90px; height:25px;
+		margin-left:170px;
+		font-size:12px;
+		}
+		
+br 		{clear:left; }
+
+.clear 	{clear:both; }
+
+		
+
+/* Miscelleneous */
+.date  {font-weight:bold; color:#8FD407; margin-bottom:1px;}
+.footer-text {font-size:12px; font-style:normal; color:#000000 ;}
+

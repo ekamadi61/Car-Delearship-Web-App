@@ -1,0 +1,168 @@
+<!doctype html><html><!-- InstanceBegin template="/Templates/index-fullwidth.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!--<script type="text/javascript" src="../js/jquery.js"></script>-->
+
+<script type="text/javascript">
+var path='photos/';
+var img=['CARS/56.jpg','CARS/55BCH.jpg','CARS/103.jpg','CARS/55.jpg','New folder/pexels-photo-204605.jpeg','CARS/55.jpg'];
+var interval = setInterval('slider()',5000);
+var index=0;
+
+function slider(){
+	if(index>img.length-1){index=0;}
+	image=path+img[index];
+	//alert(image);
+	document.getElementById('img').src=image;
+	index++;
+	interval;
+}
+
+
+
+</script>
+
+
+<link href="css/index.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+    <code><script type="text/javascript" src="js/jquery.min.js" ></script>  
+    <script type="text/javascript" src="js/jquery-ui.min.js" ></script>  
+    
+    <link href="featured-content-slider/style.css" rel="stylesheet" type="text/css" media="screen">
+    </code>  
+    <script>
+        $(document).ready(function(){  
+       $("#featured").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);   
+    });  
+    </script>
+    
+<title>Algambino Dealership</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body onLoad="slider();">
+<div id="outer">
+
+<div id="wrapper">
+
+	<div id="heading">
+    <h1><center>GAMBINO &amp; SONS MOTORS</center></h1>
+    </div>
+
+	<div id="Logo">
+   	<img src="photos/cdm-logo.png" width="478" height="145"></div>
+	<div id="social-media-icons">
+    	<ul>
+            <li><a href="http://www.instagram.com"><img src="photos/icons/Instagram-v051916_200.png" width="46" height="45" /></a></li>
+          <li><a href="http://www.facebook.com"><img src="photos/icons/images.png" width="44" height="45" /></a></li>
+          <li><a href="http://www.twitter.com"><img src="photos/icons/social-inside-twitter-icon.png" width="47" height="46" /></a></li>
+          <li><a href="http://www.youtube.com"><img src="photos/icons/YouTube-icon.png" width="48" height="44" /></a></li>
+      </ul>
+    </div>
+   
+    
+    <div id="topnav">
+    	<ul>
+        	<li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services1.html">SERVICES</a></li>
+            <li><a href="contact.php">CONTACT US</a></li>
+            <li><a href="gllry.html">GALLERY</a></li>
+            <input type="text" placeholder="Search..">
+      	</ul>
+    
+    </div>
+    
+    <div id="slider"> 
+        <img id="img" src="" border:"0" alt="Fourth image"  width="990" height="350" />
+  </div> 
+  
+<div id="content-fullwidth"><!-- InstanceBeginEditable name="content" -->
+  <h2>Services</h2>
+  <p>Our Company boasts of the best deals on new and used car imports yet also locally assembled and restored muscle cars.</p>
+  <p>We also provide restoration services to wrecked and totalled cars in our motor garage, you can also come for your regular car service maintainance be it changing of engine oil to flat tyre repairs. We do customization, paint and interior jobs at reasonable prices.</p>
+  <p>Our top notch car washing facilities around town will also leave you car clean and fresh, we do seat vaccum cleaning, enginge components cleaning, general car cleaning leaving your car with that sparkle.</p>
+  
+  <!--<button onclick="$('#hideme').addClass("hide");"> click...</button>
+  <div id="hideme">now you see me!!!</div>-->
+  
+      <div id="featured" >  
+        <ul class="ui-tabs-nav">  
+            <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1"><a href="#fragment-1"><img src="photos/New folder/pexels-photo-386025.jpeg" alt="" width:"50" height="50"/><span><b>New and Used Imports Here</b></span></a></li>  
+            <li class="ui-tabs-nav-item" id="nav-fragment-2"><a href="#fragment-2"><img src="photos/New folder/lamborghini-brno-racing-car-automobiles-39501.jpeg" alt="" width="75" height="50"/><span><b>Automotive Service Garage</b></span></a></li>  
+            <li class="ui-tabs-nav-item" id="nav-fragment-3"><a href="#fragment-3"><img src="photos/New folder/d68282b2-8d81-4ed6-9521-1d504dd9fea0.jpg" alt=""  width="75" height="50"/><span><b>Car Wash</b></span></a></li>  
+            <li class="ui-tabs-nav-item" id="nav-fragment-4"><a href="#fragment-4"><img src="photos/New folder/pexels-photo-593172.jpeg" alt=""  width="75" height="50"/><span><b> Get your test drive today</b></span></a></li>  
+        </ul>  
+        <!-- First Content -->  
+        <div id="fragment-1" class="ui-tabs-panel" style="">  
+            <img src="photos/New folder/pexels-photo-724495.jpeg" alt=""  width="415" height="300"/>  
+            <div class="info" >  
+            <h2>New and Used Imports Here</h2>  
+            <p>Get the car that suits your needs renging in different price, model and design ranges..<a href="gallery.html" >see more</a></p>  
+            </div>  
+        </div>  
+        <!-- Second Content -->  
+        <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">  
+            <img src="photos/New folder/pexels-photo-190574.jpeg" alt="" width="415" height="300" />  
+            <div class="info" >  
+            <h2>Automotive Service Garage</h2>  
+            <p>Get your old muscle car restored or come get your engine checked today at the best automotive garage in town..<a href="gallery.html" >see more</a></p>  
+            </div>  
+        </div>  
+        <!-- Third Content -->  
+        <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">  
+            <img src="photos/New folder/pexels-photo-372810.jpeg" alt="" width="415" height="300" />  
+            <div class="info" >  
+            <h2>Car Wash</h2>  
+            <p>We offer the best cleaning service in town, check out our satisfied customers rides as they leave our sparkles car wash.<a href="gallery.html" >see more</a></p>  
+            </div>  
+        </div>  
+        <!-- Fourth Content -->  
+        <div id="fragment-4" class="ui-tabs-panel ui-tabs-hide" style="">  
+            <img src="photos/New folder/photo-1498887960847-2a5e46312788.jpeg" alt="" width="415" height="300" />  
+            <div class="info" >  
+            <h2>Test drive</h2>  
+            <p>We offer our customers and potential customers the benefit of doubt and leave them to take out our cars be new or old for test drives in our designated arena, come out come today and experience the power of some of the most expensive machines out in the streets!.<a href="gallery.html" >see more</a></p>  
+            </div>  
+        </div>  
+    </div>  
+  
+  <!--=======================================================================================-->
+          <p>To make an oder or enquiry concerning our services please login to your account or sign up if you are a new customer</p>
+          <a href="about.html" ><b>Click here for more info..</b></a>
+          
+            <button onclick="window.location.href='login.html'">LOGIN</button>
+         <button onclick="window.location.href='signup.html'">SIGN UP</button>
+        
+  <!--=======================================================================================-->
+
+<!-- InstanceEndEditable --></div>
+    
+  
+
+    
+	<div id="footer">
+   	  <p>Copyright © 2018- Dagaye Designs Studiolab LLC</p>
+   	  <p>Terms Of Service | Privacy Policy</p>
+    </div>
+    
+    </div>
+    
+    </div>
+        
+</body>
+<!-- InstanceEnd --></html>
+
+<link rel="stylesheet" type="text/css" href="featured-content-slider/style.css?version=new" />
+<script type="text/javascript" src="featured-content-slider/js/jquery-1.8.2.js" ></script>
+<script type="text/javascript" src="featured-content-slider/js/jquery-ui-1.9.0.custom.min.js" ></script>
+<script type="text/javascript" src="featured-content-slider/js/jquery-ui-tabs-rotate.js" ></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#featured").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+	});
+</script>
+

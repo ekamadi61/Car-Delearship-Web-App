@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+-->
+<script type="text/javascript">
+var path='photos/';
+var img=['CARS/56.jpg','CARS/55BCH.jpg','CARS/103.jpg','CARS/55.jpg','New folder/pexels-photo-204605.jpeg','CARS/55.jpg'];
+var interval = setInterval('slider()',2000);
+var index=0;
+//image=path+img[index];
+function slider(){
+	if(index>img.length-1){index=0;}
+	image=path+img[index];
+	//alert(image);
+	document.getElementById('img').src=image;
+	document.getElementById('img').alt=image +"Not found!";
+	index++;
+	interval;
+}
+
+//document.getElementById('img').src=image;
+
+</script>
+
+
+<link href="css/index.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Algambino Dealership</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body onload="slider();" >
+<div id="outer">
+
+<div id="wrapper">
+
+	<div id="heading">
+    <h1><center>GAMBINO &amp; SONS MOTORS</center></h1>
+    </div>
+
+	<div id="Logo">
+   	<img src="photos/cdm-logo.png" width="478" height="145"></div>
+	<div id="social-media-icons">
+    	<ul>
+            <li><a href="http://www.instagram.com"><img src="photos/icons/Instagram-v051916_200.png" width="46" height="45" /></a></li>
+          <li><a href="http://www.facebook.com"><img src="photos/icons/images.png" width="44" height="45" /></a></li>
+          <li><a href="http://www.twitter.com"><img src="photos/icons/social-inside-twitter-icon.png" width="47" height="46" /></a></li>
+          <li><a href="http://www.youtube.com"><img src="photos/icons/YouTube-icon.png" width="48" height="44" /></a></li>
+      </ul>
+    </div>
+   
+    
+    <div id="topnav">
+    	<ul>
+        	<li><a href="../Main/index.html">HOME</a></li>
+            <li><a href="../Main/about.html">ABOUT</a></li>
+            <li><a href="../Main/services1.html">SERVICES</a></li>
+            <li><a href="../Main/contact.php">CONTACT US</a></li>
+            <li><a href="gllry.html">GALLERY</a></li>
+            <input type="text" placeholder="Search..">
+      	</ul>
+    
+    </div>
+    
+    <div id="slider"> 
+        <img id="img" src="" border:"0" alt="Image not found!"  width="990" height="350"/>
+  </div> 
+
+<div id="content"><!-- TemplateBeginEditable name="content" -->
+  <h2>Welcome to Gambino &amp; Sons Dealership</h2>
+  <p>This is not your average car dealership! Here is your one stop shop for all things motor by all means anything that has wheels and can rev an engine...</p>
+  <p>Brace yourself for the ride of your life as i take you through our amazing website as we aid you in choosing just the right kind of auto meeting your needs and not leaving you out of your budgetline ranging from new to old but custom, you know..Ol' is gold!</p>
+  <p>Buckle up friend! the train to drivers-seat-paradise just honked almost time for you to be in that driver's seat so forget about Uber's unbeatable prices.Save that for the gas!</p>
+  
+  <img src="photos/New folder/photo-149.jpeg" width="559" height="355" class="image-frame" >
+  
+  <select name="Language">
+          <option value="-1" selected>---choose Language---</option>
+          <option value="1">English</option>
+          <option value="2">Swahili</option>
+          <option value="3">French</option>
+          <option value="4">Spanish</option>
+          </select>
+<!--==================================================================-->
+		 <button onclick="window.location.href='login.html'">LOGIN</button>
+         <button onclick="window.location.href='signup.html'">SIGN UP</button>
+<!--==================================================================-->
+<!-- TemplateEndEditable --></div>
+    
+    <div id="right-side"><!-- TemplateBeginEditable name="Right-bar" -->
+      <h3>Latest News</h3>
+      <p class="date">October 22nd 2014</p>
+      
+      <p>The <strong>Mercedes-AMG GT</strong> (C190 / R190) is a 2-door, 2-seater <a href="https://en.wikipedia.org/wiki/Fastback" title="Fastback">fastback</a> <a href="https://en.wikipedia.org/wiki/Coup%C3%A9" title="Coupé">coupé</a> and <a href="https://en.wikipedia.org/wiki/Roadster_(automobile)" title="Roadster (automobile)">roadster</a> produced by <a href="https://en.wikipedia.org/wiki/Mercedes-AMG" title="Mercedes-AMG">Mercedes-AMG</a>. The sports car was presented on 9 September 2014 and was officially unveiled to the public in October 2014 at the <a href="https://en.wikipedia.org/wiki/Paris_Motor_Show" title="Paris Motor Show">Paris Motor Show</a>.<a href="https://en.wikipedia.org/wiki/Mercedes-AMG_GT#cite_note-EU_launch_press_release-4">[4]</a> After the <a href="https://en.wikipedia.org/wiki/Mercedes-Benz_SLS_AMG" title="Mercedes-Benz SLS AMG">SLS AMG</a>, it is the second sports car developed entirely in-house by Mercedes-AMG</p>
+      <div data-ved="0ahUKEwiAidiyyoDZAhXKDMAKHUIQAAMQrz0IUzAI">
+        <div>
+          <div data-ved="0ahUKEwiAidiyyoDZAhXKDMAKHUIQAAMQsz0IVCgAMAg">
+          <strong>Zero to 60 mph</strong>‎: ‎3.5 sec</div>
+          <div data-ved="0ahUKEwiAidiyyoDZAhXKDMAKHUIQAAMQsz0IVSgBMAg">
+          <strong>Top speed</strong>‎: ‎193 mph</div>
+        </div>
+        
+        <div>
+          <div data-ved="0ahUKEwiAidiyyoDZAhXKDMAKHUIQAAMQsz0IVigCMAg">
+          <strong>MSRP</strong>‎: ‎$113,395</div>
+          <div data-ved="0ahUKEwiAidiyyoDZAhXKDMAKHUIQAAMQsz0IVygDMAg">
+          <strong>Power</strong>‎: ‎503 hp @ 6250 rpm</div>
+        </div>
+      </div>
+      
+      <h4>Quick Check!</h4>
+      <p>Before driving out make sure you are covered, here are some quick checks you could make to be on top of your game: <ul>
+      			<li>Brake/oil Fluid</li>
+                <li>Tyre Pressure</li>
+                <li>Coolant level</li>
+                <li>Battery</li>
+      		</ul>
+            Its always nice to be safe than sorry! And dont forget to buckle up
+            </p>
+      <p class="date">May 2nd 2014</p>
+      <h4>New services</h4>
+      <p>Introducing our new wide range of services ranging from motor dealership to now car maintainance auto garage and car washing and interior dry cleaning, check our <a href="services1.html" ><b>services</b></a> page out for more details....</p>
+    <!-- TemplateEndEditable --></div>
+
+    
+	<div id="footer">
+   	  <p>Copyright © 2018- Dagaye Designs Studiolab LLC</p>
+   	  <p>Terms Of Service | Privacy Policy</p>
+    </div>
+    
+    </div>
+    
+    </div>
+        
+</body>
+</html>
