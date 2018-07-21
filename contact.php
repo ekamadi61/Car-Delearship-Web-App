@@ -1,5 +1,34 @@
 <?php
-$con = mysqli_connect("localhost", "root", "", "Algambino")
+//inintializing connection serverName,userName,Pwd,dbmsName
+$conn = mysqli_connect("localhost", "root", "", "algambino");
+
+if (isset($_POST['btn-submit'])){
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $phone = $_POST['phone'];
+  $message = $_POST['message'];
+  $insert = mysqli_query($conn,"INSERT INTO contact_info(Name, Email, Phone, Message)VALUES('$name','$email','$phone',' $message')") or die(mysqli_error($conn));
+  if($insert)
+  {
+    ?>
+    <script type="text/javascript">
+      alert("Message sent successfully")
+    </script>
+    <?php
+  }
+
+//   $sql = $conn->prepare('INSERT INTO contact_info(Name, Email, Phone, Message) VALUES(?,?,?,?)');
+//   $sql->bind_param('ssss',$name, $email, $phone, $message);
+
+//   if ($sql->execute()) or die(mysqli_error($conn)){
+//     echo "<script type = 'text/javascript'> alert('success!'); </script>";
+//   }else{
+//     echo $conn->error;
+//     echo "failed";
+//   }
+}
+//mysqli_close($conn);
+$conn->close();
 ?>
 <!doctype html>
 <html>
@@ -106,7 +135,7 @@ function validateForm() {
    You can also interact with us through our social media pages just by loging into your account through the icons 
    displayed at the top of your web page.</p>
   
-  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" >
+  <form name="myForm" action="contact.php" method="post" >
     <ol class="forms">
       
       <li>
@@ -116,7 +145,7 @@ function validateForm() {
       
       <li>
         <label for="email">Email</label>
-        <input type="email" name="emaill" id="email" required/>
+        <input type="email" name="email" id="email" required/>
         </li>
       
       <li>
@@ -137,7 +166,7 @@ function validateForm() {
         </li>
       
       <li >
-        <button type="submit" class="submit">Send message</button>
+        <button type="submit" class="submit" name="btn-submit">Send message</button>
         </li>
       
       </ol>
